@@ -8,7 +8,7 @@ The project can be used by any organization provided the author name (Arun Nalla
 - Its just a plain demo purpose to demonstrate Graph database with linear operation. Time is not spent enough for performance optimization like search operations - however, best effort is made.
 - All queries are case sensitive.
 - Since this is a REST application - it uses error codes like 400 for bad request, 404 for resource not found and 200 for success, etc., following the standard convention.
-- At this time, the application does not support *BULK Import/Export* but can be easily extended to serialize/de-serialize the in-memory database from/to JSON file 
+- At this time, the application does not support **BULK Import/Export** but can be easily extended to serialize/de-serialize the in-memory database from/to JSON file 
 
 ## Pre-requisites
 
