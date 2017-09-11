@@ -1,0 +1,12 @@
+package org.arun.applications.abcdb;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ArunSampleDbApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ArunSampleDbApplication.class, args);
+	}
+}
