@@ -8,7 +8,7 @@ The project can be used by any organization provided the author name (Arun Nalla
 - Its just a plain demo purpose to demonstrate Graph database with linear operation. Time is not spent enough for performance optimization like search operations - however, best effort is made.
 - All queries are case sensitive.
 - Since this is a REST application - it uses error codes like 400 for bad request, 404 for resource not found and 200 for success, etc., following the standard convention.
-- 
+- At this time, the application does not support *BULK Import/Export* but can be easily extended to serialize/de-serialize the in-memory database from/to JSON file 
 
 ## Pre-requisites
 
@@ -28,11 +28,24 @@ The project can be used by any organization provided the author name (Arun Nalla
 ## Testing the application
 
 - Use Postman or Chrome plugin - Advanced Rest Client to test the below urls
- - http://localhost:8765/customers
- - http://localhost:8765/customers/{id or name}
- - http://localhost:8765/regions
- - http://localhost:8765/regions/Madurai
- - http://localhost:8765/regions/Madurai/customers
- - http://localhost:8765/regions/Madurai/customers?ageFrom=30&ageTo=40
+
+ - Please make sure to pass the below in Request Headers:
+   ```
+   *Request Headers*
+   Content-Type: application/json
+   ```
+ 
+ - POST http://localhost:8765/customers/createOrUpdate
+   ```
+   *Request Body*
+   {"id": "3", "name": "Tharak Nallan", "age": "8", 
+"belongsToRegion": {"name": "Madurai"}}
+   ```
+ - GET  http://localhost:8765/customers
+ - GET  http://localhost:8765/customers/{id or name}
+ - GET  http://localhost:8765/regions
+ - GET  http://localhost:8765/regions/Madurai
+ - GET  http://localhost:8765/regions/Madurai/customers
+ - GET  http://localhost:8765/regions/Madurai/customers?ageFrom=30&ageTo=40
  
  
