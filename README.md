@@ -1,7 +1,7 @@
 # ArunSampleDBApplication
 
 This REST based DB application is covered by General public license v3 and it is intended to be used for demo purposes only.
-The project can be used by any organization provided the author name (Arun Nallan) and [GitHub URL](https://github.com/arunnc) is included in the comments section of the imported code.
+The project can be used by any organization provided the author name (Arun Nallan) and [GitHub URL](https://github.com/arunnc/ArunSampleDBApplication) is included in the comments section of the imported code.
 
 ## Algorithm
 
@@ -29,15 +29,15 @@ The project can be used by any organization provided the author name (Arun Nalla
 
 - Use Postman or Chrome plugin - Advanced Rest Client to test the below urls
 
- - Please make sure to pass the below in Request Headers:
+ - Please make sure to pass the below in Request Headers for all the requests:
    ```
-   *Request Headers*
+   Request Headers
    Content-Type: application/json
    ```
  
  - POST http://localhost:8765/customers/createOrUpdate
    ```
-   *Request Body*
+   Request Body
    {"id": "3", "name": "Tharak Nallan", "age": "8", 
 "belongsToRegion": {"name": "Madurai"}}
    ```
