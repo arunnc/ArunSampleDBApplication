@@ -38,8 +38,7 @@ The project can be used by any organization provided the author name (Arun Nalla
  - POST http://localhost:8765/customers/createOrUpdate
    ```
    Request Body
-   {"id": "3", "name": "Tharak Nallan", "age": "8", 
-"belongsToRegion": {"name": "Madurai"}}
+   {"id": "3", "name": "Tharak Nallan", "age": "8", "belongsToRegion": {"name": "Madurai"}}
    ```
  - GET  http://localhost:8765/customers
  - GET  http://localhost:8765/customers/{id or name}
